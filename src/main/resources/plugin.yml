@@ -1,0 +1,8 @@
+name: WeatherReport
+version: '1.0-SNAPSHOT'
+main: xyz.fortern.weather.Main
+api-version: '1.21'
+
+commands:
+  weatherinfo:
+    description: '显示天气预报'
