@@ -1,0 +1,19 @@
+weather:
+  clear: "晴天"
+  rain: "降雨"
+  rain-without-thunder: "降雨（无雷）"
+  thunder: "雷暴"
+
+forecast:
+  current: "&f当前&9{weather}&f"
+  transition: "&c{duration}&f后转为&9{next_weather}&f"
+
+duration:
+  day-hour-minute: "{days}天{hours}小时{minutes}分钟"
+  hour-minute: "{hours}小时{minutes}分钟"
+  minute: "{minutes}分钟"
+
+command:
+  player-only: "只有玩家可以使用此命令。"
+  no-weather: "当前世界没有天气变化。"
+  weather-cycle-disabled: "当前世界没有开启天气循环。"

@@ -1,0 +1,8 @@
+name: WeatherForecast
+version: '1.0-SNAPSHOT'
+main: xyz.fortern.forecast.Main
+api-version: '1.18'
+
+commands:
+  forecast:
+    description: 'Weather Forecast'

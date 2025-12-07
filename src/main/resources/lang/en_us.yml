@@ -1,0 +1,19 @@
+weather:
+  clear: "clear"
+  rain: "rain"
+  rain-without-thunder: "rain (without thunder)"
+  thunder: "thunderstorms"
+
+forecast:
+  current: "&fCurrent weather: &9{weather}&f"
+  transition: "&fIn &c{duration}&f it will become &9{next_weather}&f"
+
+duration:
+  day-hour-minute: "{days}d {hours}h {minutes}min"
+  hour-minute: "{hours}h {minutes}min"
+  minute: "{minutes}min"
+
+command:
+  player-only: "You must be a player to use this command."
+  no-weather: "Weather does not change in this world."
+  weather-cycle-disabled: "The weather cycle is disabled in this world."

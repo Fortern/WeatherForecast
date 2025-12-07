@@ -1,0 +1,6 @@
+# Players receive messages in their Minecraft client language when a matching
+# file exists under plugins/WeatherReport/lang.
+use-player-locale: true
+
+# Used by the console and as the fallback for unsupported player languages.
+default-locale: en_us
