@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'ver/**'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Java
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: "17"
+          cache: maven
+
+      - name: Build plugin
+        run: mvn -B package
+
+      - name: Determine version
+        id: set-version
+        shell: bash
+        run: |
+          VERSION=${GITHUB_REF#refs/tags/ver/}
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Release
+        uses: ncipollo/release-action@v1
+        with:
+          name: "${{ steps.set-version.outputs.version }} Release"
+          artifacts: target/spigot/*.jar

@@ -2,9 +2,14 @@
 
 A weather forecast plugin that tells players exactly when the weather will change next.
 
+## Compatibility
+
+WeatherForecast supports Spigot/Paper 1.18 and later versions.
+
 ## Usage
 
 Players receive a weather forecast when they join the game and whenever the weather changes.
+
 ## Languages
 
 The plugin includes built-in support for `zh_cn` and `en_us`. By default, messages are sent in the language configured in each player's Minecraft client.
